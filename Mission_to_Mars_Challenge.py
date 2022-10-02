@@ -22,7 +22,7 @@ for i in range(4):
     title = browser.find_by_css('h2[class="title"]').text
     
     # Look at the original link and grab the hyperlink reference
-    url = browser.links.find_by_text('Original')["href"]
+    url = browser.links.find_by_text('Sample')["href"]
     
     # Add the found data to our list  
     hemisphere_image_urls.append({'img_url':url, 'title':title})
